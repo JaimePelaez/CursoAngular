@@ -1,22 +1,19 @@
-import { DbzModule } from './dbz/dbz.module';
-import { ContadorMudule } from './contador/contador.module';
-import { HeroesModule } from './heroes/heroes.module';
+import { GifsModule } from './gifs/gifs.module';
+import { SharedModule } from './shared/shared.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from "@angular/common/http";
 import { AppComponent } from './app.component';
-
-
-
 
 @NgModule({
   declarations: [
-    AppComponent,
+    AppComponent
   ],
   imports: [
     BrowserModule,
-    HeroesModule,
-    ContadorMudule,
-    DbzModule
+    HttpClientModule,
+    SharedModule,
+    GifsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

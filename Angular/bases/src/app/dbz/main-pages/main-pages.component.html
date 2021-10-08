@@ -1,0 +1,15 @@
+<h1>Dragon ball Z</h1>
+<hr>
+<div class="row">
+    <div class="col">
+        <app-personajes ><!-- [personajes]="personajes" esto es para pasar informacion del padre al hijo -->
+        </app-personajes>
+    </div>
+
+    <div class="col">
+        <app-agregar 
+            [nuevo]="nuevo"
+        > <!-- (onNuevoPersonaje)="agregarNuevoPersonaje( $event )" este evento personalizado ya no se utiliza ya que no enviamos informacion del hijo al padre -->
+        </app-agregar>
+    </div>
+</div>

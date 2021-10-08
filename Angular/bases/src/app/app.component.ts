@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   selector: 'app-root',
   // El selector es el nombre que ese componente va a tener.
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls:['app.component.css']
 })
 export class AppComponent {
   

@@ -25,4 +25,7 @@ export class PorPaisComponent  {
         console.info(err);
       });
   }
+  sugerencias(termino:string){
+
+  }
 }
